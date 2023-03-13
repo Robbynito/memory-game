@@ -24,6 +24,32 @@ const items = [
   { name: "sad", image: "sad.png" },
   { name: "upside_down", image: "upside_down.png" },
   { name: "wink", image: "wink.png" },
+  { name: "scream", image: "scream.png" },
+  { name: "shock", image: "shock.png" },
+  { name: "depressed", image: "depressed.png" },
+  { name: "anguish", image: "anguish.png" },
+  { name: "smile", image: "smile.png" },
+  { name: "frown", image: "frown.png" },
+  { name: "emotionless", image: "emotionless.png" },
+  { name: "wide", image: "wide.png" },
+  { name: "disbelieve", image: "disbelieve.png" },
+  { name: "joy", image: "joy.png" },
+  { name: "high", image: "high.png" },
+  { name: "agony", image: "agony.png" },
+  { name: "neutral", image: "neutral.png" },
+  { name: "pout", image: "pout.png" },
+  { name: "relieved", image: "relieved.png" },
+  { name: "despair", image: "despair.png" },
+  { name: "moustache", image: "moustache.png" },
+  { name: "blackhole", image: "blackhole.png" },
+  { name: "fuck", image: "fuck.png" },
+  { name: "shit", image: "shit.png" },
+  { name: "squint", image: "squint.png" },
+  { name: "doughnut", image: "doughnut.png" },
+  { name: "wheel", image: "wheel.png" },
+  { name: "moan", image: "moan.png" },
+  { name: "wonk", image: "wonk.png" },
+  { name: "worried", image: "worried.png" },
 ];
 
 //Initial Time
@@ -54,7 +80,7 @@ const movesCounter = () => {
 };
 
 //Pick random objects from the items array
-const generateRandom = (size = 4) => {
+const generateRandom = (size = 8) => {
   //temporary array
   let tempArray = [...items];
   //initializes cardValues array
@@ -71,7 +97,7 @@ const generateRandom = (size = 4) => {
   return cardValues;
 };
 
-const matrixGenerator = (cardValues, size = 4) => {
+const matrixGenerator = (cardValues, size = 8) => {
   gameContainer.innerHTML = "";
   cardValues = [...cardValues, ...cardValues];
   //simple shuffle
